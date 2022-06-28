@@ -31,6 +31,9 @@
         outline: none;
         border: 1px solid #DDDDDD 
     }
+    #outercontainer {
+        margin: 20rem;
+    }
     #regspan {
         background-color: blue;
         color: white;
@@ -49,12 +52,16 @@
     .flex-container {
         display: flex;
         flex: 1;
+        align-items: stretch;
     }
     .item {
         flex-grow: 1;
+        padding-left: 8 rem;
+        padding-right: 8 rem;
     }
 </style>
 <body>
+    <div id="outercontainer">
     <h3>Sign Up</h3>
     <form>
     <div class="flex-container" >
@@ -80,8 +87,8 @@
         <button class="item" id="register">Register</button>
         <button class="item" id="signin">Sign In</button>
     </div>
-    
     </form>
+    </div>
     
 </body>
 </html>
