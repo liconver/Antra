@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
+  </head>
+  <style>
     * {
-        font-family:sans-serif;
-        border-radius: 8px;
-        padding: 5px;
+      font-family: sans-serif;
+      border-radius: 8px;
+      padding: 5px;
     }
     h3 {
-        text-align: center;
+      text-align: center;
     }
-    input[type=text] {
-        outline: none;
-        padding: 3px 0px 3px 3px;
-        margin: 5px 1px 3px 0px;
-        border: 1px solid #DDDDDD;
+    input[type="text"] {
+      outline: none;
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid #dddddd;
     }
-    input[type=text]:focus {
-        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-        padding: 3px 0px 3px 3px;
-        margin: 5px 1px 3px 0px;
-        border: 1px solid rgba(81, 203, 238, 1);
+    input[type="text"]:focus {
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid rgba(81, 203, 238, 1);
     }
     button {
-        outline: none;
-        border: 1px solid #DDDDDD 
+      outline: none;
+      border: 1px solid #dddddd;
     }
     #outercontainer {
-        margin: 5rem;
+      margin: 5rem;
     }
     #regspan {
-        background-color: blue;
-        color: white;
+      background-color: blue;
+      color: white;
     }
     #register {
-        background-color: blue;
-        color: white;
+      background-color: blue;
+      color: white;
     }
     #signin {
-        background-color: green;
-        color: white;
+      background-color: green;
+      color: white;
     }
     #disclaimer {
-        font-size: smaller;
+      font-size: smaller;
     }
     .flex-container {
-        display: flex;
-        flex: 1;
-        column-gap: 1rem;
+      display: flex;
+      flex: 1;
+      column-gap: 1rem;
     }
     .item {
-        flex-grow: 1;
-        padding-left: 8 rem;
-        padding-right: 8 rem;
+      flex-grow: 1;
+      padding-left: 8 rem;
+      padding-right: 8 rem;
     }
-</style>
-<body>
+  </style>
+  <body>
     <div id="outercontainer">
-    <h3>Sign Up</h3>
-    <form>
-    <div class="flex-container" >
-        <input class="item" type="text" placeholder="First Name">
-        <input class="item" type="text" placeholder="Last Name">
+      <h3>Sign Up</h3>
+      <form>
+        <div class="flex-container">
+          <input class="item" type="text" placeholder="First Name" />
+          <input class="item" type="text" placeholder="Last Name" />
+        </div>
+        <div class="flex-container">
+          <input class="item" type="text" placeholder="Mobile No." />
+        </div>
+        <div class="flex-container">
+          <input class="item" type="text" placeholder="Email Address" />
+        </div>
+        <div class="flex-container">
+          <input class="item" type="text" placeholder="Password" />
+          <input class="item" type="text" placeholder="Confirm Password" />
+        </div>
+        <div class="flex-container">
+          <div class="item">
+            <input type="checkbox" />
+            <label><b>I Agree</b></label>
+          </div>
+          <div class="item">
+            <div id="disclaimer">
+              By clicking <span id="regspan">Register</span>, you agree to the
+              <a href="#">Terms and Conditions</a> set out by this site,
+              including our Cookie Use.
+            </div>
+          </div>
+        </div>
+        <div class="flex-container">
+          <button class="item" id="register">Register</button>
+          <button class="item" id="signin">Sign In</button>
+        </div>
+      </form>
     </div>
-    <div class="flex-container">
-        <input class="item" type="text" placeholder="Mobile No.">
-    </div>
-    <div class="flex-container">
-        <input class="item" type="text" placeholder="Email Address">
-    </div>
-    <div class="flex-container">
-        <input class="item" type="text" placeholder="Password">
-        <input class="item" type="text" placeholder="Confirm Password">
-    </div>
-    <div class="flex-container">
-       <div class="item">
-        <input type="checkbox">
-        <label><b>I Agree</b></label>
-       </div>
-       <div class="item">
-        <div id="disclaimer">By clicking <span id="regspan">Register</span>, you agree to the <a href="#">Terms and Conditions</a> set out by this site, including our Cookie Use.</div>
-       </div>
-    </div>
-    <div class="flex-container">
-        <button class="item" id="register">Register</button>
-        <button class="item" id="signin">Sign In</button>
-    </div>
-    </form>
-    </div>
-    
-</body>
+  </body>
 </html>
