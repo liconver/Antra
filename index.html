@@ -32,7 +32,7 @@
         border: 1px solid #DDDDDD 
     }
     #outercontainer {
-        margin: 20rem;
+        margin: 5rem;
     }
     #regspan {
         background-color: blue;
@@ -52,7 +52,7 @@
     .flex-container {
         display: flex;
         flex: 1;
-        align-items: stretch;
+        column-gap: 1rem;
     }
     .item {
         flex-grow: 1;
@@ -79,9 +79,13 @@
         <input class="item" type="text" placeholder="Confirm Password">
     </div>
     <div class="flex-container">
+       <div class="item">
         <input type="checkbox">
         <label><b>I Agree</b></label>
+       </div>
+       <div class="item">
         <div id="disclaimer">By clicking <span id="regspan">Register</span>, you agree to the <a href="#">Terms and Conditions</a> set out by this site, including our Cookie Use.</div>
+       </div>
     </div>
     <div class="flex-container">
         <button class="item" id="register">Register</button>
