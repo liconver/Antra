@@ -12,11 +12,24 @@
         border-radius: 8px;
         padding: 5px;
     }
-    h1 {
+    h3 {
         text-align: center;
     }
-    input {
-        border-color: lightgray;
+    input[type=text] {
+        outline: none;
+        padding: 3px 0px 3px 3px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid #DDDDDD;
+    }
+    input[type=text]:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        padding: 3px 0px 3px 3px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
+    button {
+        outline: none;
+        border: 1px solid #DDDDDD 
     }
     #regspan {
         background-color: blue;
@@ -30,23 +43,30 @@
         background-color: green;
         color: white;
     }
+    .flex-container {
+        display: flex;
+        flex: 1;
+    }
+    .item {
+        flex-grow: 1;
+    }
 </style>
 <body>
-    <h1>Sign Up</h1>
+    <h3>Sign Up</h3>
     <form>
-    <div class="flex-containter">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
+    <div class="flex-containter" >
+        <input class="item" type="text" placeholder="First Name">
+        <input class="item" type="text" placeholder="Last Name">
     </div>
     <div class="flex-container">
-        <input type="text" placeholder="Mobile No.">
+        <input class="item" type="text" placeholder="Mobile No.">
     </div>
     <div class="flex-container">
-        <input type="text" placeholder="Email Address">
+        <input class="item" type="text" placeholder="Email Address">
     </div>
     <div class="flex-container">
-        <input type="text" placeholder="Password">
-        <input type="text" placeholder="Confirm Password">
+        <input class="item" type="text" placeholder="Password">
+        <input class="item" type="text" placeholder="Confirm Password">
     </div>
     <div class="flex-container">
         <input type="checkbox">
@@ -54,8 +74,8 @@
         <div>By clicking <span id="regspan">Register</span>, you agree to the <a href="#">Terms and Conditions</a> set out by this site, including our Cookie Use.</div>
     </div>
     <div class="flex-container">
-        <button id="register">Register</button>
-        <button id="signin">Sign In</button>
+        <button class="item" id="register">Register</button>
+        <button class="item" id="signin">Sign In</button>
     </div>
     
     </form>
