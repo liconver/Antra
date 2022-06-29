@@ -11,6 +11,7 @@
       font-family: sans-serif;
       border-radius: 8px;
       padding: 5px;
+      box-sizing: border-box;
     }
     h3 {
       text-align: center;
@@ -35,8 +36,9 @@
       white-space: nowrap;
     }
     #outercontainer {
-      margin: 2rem;
-      width: 90%;
+      margin: auto;
+      width: 9;
+      gap: 0rem;
     }
     #regspan {
       background-color: blue;
@@ -62,8 +64,8 @@
     }
     .item {
       flex-grow: 1;
-      padding-left: 8 rem;
-      padding-right: 8 rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       flex-shrink: 1;
     }
   </style>
@@ -86,7 +88,7 @@
           <input class="item" type="text" placeholder="Password" />
           <input class="item" type="text" placeholder="Confirm Password" />
         </div>
-        <div >
+        <div class="flex-container">
           <div class="item">
             <input type="checkbox" />
             <label><b>I Agree</b></label>
